@@ -1,0 +1,50 @@
+Work From Tomorrow Onwards
+Frontend Like 2 pages - ;;; which i thought
+
+
+1) Link all the hrefs of page 2 to their appropriate path
+2) shopping cart
+3) subscribe button
+4) Scroll Up button
+5)Zoomed images
+6)Flip image - Their Content heel details -
+7)About us page
+8)Navbar theek
+9)Put page 2 in routes its giving path error for previous directory of PUBLIC_static
+10)Finalise the working on the type of
+
+
+Adding a button shopping cart making it through API
+
+
+Notes:-
+Everything is working through API
+1) Index . html we are sending that through base url '/'
+2) Login button - when we click on that , "  window . location " se vo 1ogin page par chala jata hai
+3) when we submit that , toh DBMS mein check hota hau IF the user exist , toh page redirect ho jata hai to main page
+4) Varna phir Vo ussi page par rehta h And says : either username or password entered is wrong.....
+5) Signup page create : Create its Database which includes two tables : 1 mein sirf username and password rahega
+6) Doosre mein we are having personal details of user (NEED TO CREATE THIS ) - Foreign key
+7) NOW jab login ho jaye Aur redirect karke aaye toh it should display the " Name " of " User  instead of login page
+
+8) Add to cart button - : Check if the user is logged in Toh empty cart ya kuch dikhayega :
+9) If the user is not logged in toh 1 disclaimer dega + Signup button dega jisse vo Signup kar sake ;
+10) Signup ke andar check karna hai phele vo user exist toh nhi karta ; Varna phir details eneter kardo DBMS mein
+
+11) Login/signup ka database directly sql se chal rha h
+12) Page 2 button par click krte hai tab - window load hoti hai page2 ke location par
+13) This page is handled by AJAX request - All the images used are dynamically created , path brought from database
+and divs are created = They have their attribute as their id in database
+I dont know why post request works here but not get ;
+
+14) When i click on any of the image toh AJX ke through images change hoti hai and id stored
+getters and setters are used in the sequelize to store imagepath array ..........
+
+15) Need to create a last page where final preview of the image is show , quantity price ; size add to cart , continue shopping checkout
+
+16) Need to create a cart which is stored on local storage show
+
+17) Login through google / payments method / edit front end
+
+18)All the pages are going through express static , thats why no get request through root works.
+

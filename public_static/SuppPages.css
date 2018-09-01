@@ -1,0 +1,11 @@
+.abc img{
+    width: 100%;
+    height: 100%;
+}
+img:hover{
+    transform: rotate(180deg);
+
+
+
+}
+/*selectors put here if img is hover then display of div should show and img is none*/

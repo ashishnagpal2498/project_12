@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.css">
+    <link href="../at12frontend_SS.css" rel="stylesheet">
+    <script src="../Bootstrap/dist/js/bootstrap.js"></script>
+<link href="signup_page.css" rel="stylesheet">
+    <script src="signup_frontend.js"></script>
+
+    <style>
+    #heading{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        color: navajowhite;
+        margin: 25px 10px;
+        padding: 5px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .divtext{
+        color: white;
+        text-transform: capitalize;
+        font-size: 21px;
+        font-style: italic;
+        font-family: "Footlight MT Light";
+    }
+    
+</style>
+
+</head>
+<body style="background-color: rgb(79,79,70)">
+<img src="../Files/Blueheels.png" class="navimages" style="left: 0;top: -20px;transform: rotate(70deg)">
+<img src="../Files/Icons/blackplanfilled1.png" class="navimages" style="left: 50px;top: -20px;transform: rotate(290deg)">
+<img src="../Files/Icons/differentcolor.png" class="navimages" style="left: 150px;top: -20px;transform: rotate(50deg)">
+<img src="../Files/Icons/redfilledstylish2.png" class="navimages" style="left: 250px;top: -20px;transform: rotate(10deg)">
+<img src="../Files/Icons/blueheels2.png" class="navimages" style="left: 320px;top: -20px;transform: rotate(90deg)">
+<img src="../Files/Icons/blackplanfilled2.png" class="navimages" style="left: 400px;top: -20px;transform: rotate(180deg)">
+<img src="../Files/Icons/pinkbowheels.png" class="navimages" style="left: 470px;top: -20px;transform: rotate(150deg)">
+<img src="../Files/Icons/differentcolor2.png" class="navimages" style="left: 550px;top: -20px;transform: rotate(50deg)">
+<img src="../Files/Icons/blacktransparent1.png" class="navimages" style="left: 630px;top: -20px;transform: rotate(20deg)">
+<img src="../Files/Icons/blackfilledbackview.png" class="navimages" style="left: 710px;top: -20px;transform: rotate(10deg)">
+<img src="../Files/Icons/redfilledstylish.png" class="navimages" style="left: 800px;top: -20px;transform: rotate(60deg)">
+<img src="../Files/Icons/blackplanfilled3Rotated.png" class="navimages" style="right: 0;top: -20px;transform: rotate(70deg)">
+<img src="../Files/Icons/blueheelsdummy.png" class="navimages" style="right: 80px;top: -20px;transform: rotate(10deg)">
+<img src="../Files/Icons/redheelsstylish.png" class="navimages" style="right: 150px;top: -20px;transform: rotate(50deg)">
+<img src="../Files/Icons/differentcolor3.png" class="navimages" style="right: 250px;top: -20px;transform: rotate(10deg)">
+<img src="../Files/Icons/redheels.png" class="navimages" style="right: 320px;top: -20px;transform: rotate(90deg)">
+<img src="../Files/Icons/blackplanfilled2.png" class="navimages" style="right: 400px;top: -20px;transform: rotate(180deg)">
+<img src="../Files/Icons/pinkbowheels.png" class="navimages" style="right:470px;top: -20px;transform: rotate(150deg)">
+
+<div class="container-fluid " style="border-bottom: white 2px solid">
+    <div class="row justify-content-center m-5">
+        <div class="col-2"><img src="../Files/FinalIcon.png" width="150px"></div>
+    </div>
+    <div class="row" id="navheads">
+        <div class="col-md-10 col-sm-12">
+            <ul id="navbarlist"  >
+                <li class="col-3">Home</li>
+                <li class="col-3" id="styleid">Style
+
+                </li>
+
+                <li class="col-3">About Us</li>
+            </ul>
+        </div>
+        <!--Check this Fault .........-->
+        <div class="col-2">
+            <div class="row">
+                <div class="col" id="loginbtn" data-login="notlogged">Login</div>
+                <div class="col">SignUp</div>
+                <div class="w-100"></div>
+                <div class="col"> <button class="btn btn-primary"><i class="fa fa-search"></i> </button></div>
+                <div class="col"> <button style="position: absolute;right: 100px"class=" col-auto p-2 btn btn-dark" id="cartbtn"><i class="fa fa-cart-plus"></i></button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-6 " id="heading">Welcome to @12 </div>
+
+            <div class="col-6 m-2 p-2" style="color: red">All fields Mandatory *</div>
+
+    <div class="col-sm-8 col-10">
+        <div class="row justify-content-center">
+            <div class="col-8"><form method="post" action="/signup/add" onsubmit="return fieldscheck()">
+                <div class="row">
+                    <div class="col-4 m-1 p-3 divtext"> First Name </div>
+                    <div class="col-6 p-2">
+                        <input class="input-group-text"  type="text" name="firstname">
+                    </div>
+                </div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> Last Name </div> <div class="col-6 p-2"> <input class="input-group-text" type="text" name="lastname"></div> </div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext">  Username </div><div class="col-6 p-2"> <input class="input-group-text" type="email" name="username"></div><div id="emptyuser"></div> </div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext">  Password </div><div class="col-6 p-2"> <input class="input-group-text" type="password" name="password"></div></div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> Re-enter Password </div><div class="col-6 p-2"><input class="input-group-text" type="password" name="repassword"></div></div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> DOB </div><div class="col-6 p-2"> <input class="input-group-text" type="date" name="dob"></div></div>
+
+                <div class="row">   <div class="col-4 m-1 p-3 divtext">Security Question </div>
+                    <!--<div class="col-6 p-2" > <div class="col-lg-9 col-md-9 col-sm-10 col-12 input-group-text" id="selectedopt"  style="position: relative;height: 40px">-->
+                 <!--<div id="securequesoptions">-->
+<!--&lt;!&ndash;This Isn't working in chrome but working in mozilla so Make it generic&ndash;&gt;-->
+                     <!--<ul id="optionlist" onclick="selectedopt(event)">-->
+                         <!--<li> What is your Hobby ?</li>-->
+                         <!--<li>What is your pet's name ?</li>-->
+                         <!--<li> What is your nickname ?</li>-->
+                     <!--</ul>-->
+                 <!--</div>   <i id="optionbtn" onclick="options()" class="btn fa fa-arrow-up"></i> </div> </div>-->
+                <!---->
+
+                    <div class="col-6 p-2">
+                    <select class="input-group-text" name="securityques">
+
+                        <option value="what is your hobby?">What is your Hobby ?</option>
+                        <option value="what is your pet's name?">What is your pet's name ?</option>
+                        <option value="what is your nickname?">What is your nickname ?</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> Security Answer </div> <div class="col-6 p-2"> <input title="securityans" class="input-group-text" type="text" name="securityans"></div> </div>
+                <div class="row justify-content-center">  <div class="col-5 m-3 divtext"> <input onclick="emptyfields()" class="btn btn-info" type="submit"></div> </div>
+            </form> </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+<!--1) Make the security question bar 2)Selected bar should be displayed in value 3)Submit button and add it to database -->
+<!--4)Forgot password - Email enter karwao - uske baad security question - when is your account created around date -->
+<!--5) Inn sab chhezon ka check lagana hai validate , uske baaad new password ka option , Update in database ......-->

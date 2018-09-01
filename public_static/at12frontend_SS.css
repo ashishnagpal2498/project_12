@@ -1,0 +1,123 @@
+#navheads{
+    position: relative;
+    font-family: "Monotype Corsiva";
+    font-size: 25px;
+    color: #ebcccc;
+}
+#navbarlist{
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+}
+#navbarlist li{
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+.navimages{
+    position: absolute;
+    width: 60px;
+}
+.ovlay {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 150px;  bottom: 0; left: 100px ; right: 0;
+    align-content: center;
+
+
+}
+.videocontent{ opacity: 5;
+    font-family: cursive;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+#carouselmainheading{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: Calibri;
+    border: 5px dot-dash darkseagreen;
+    padding: 10px;
+    color: #2aabd2;
+}
+#carouselmainheading div{
+    box-sizing: padding-box;
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px solid darkseagreen;
+}
+.caroselhead{
+    text-align: center;
+    padding: 20px 10px;
+
+    color: mediumpurple;
+    font-size: 40px;
+    font-family: "Monotype Corsiva";
+}
+.caroselhead span{
+    text-decoration: underline #ebcccc ;
+    border: 3px dashed indianred;
+    padding: 10px 15px;
+    outline: black 2px dotted ;
+    transition: color 2s;
+}
+.caroselhead span:hover{
+    cursor: pointer;
+    color: palevioletred;
+}
+#whatwedohead{
+    padding: 5px;
+    font-size: 30px;
+    text-decoration: #6f42c1 underline overline;
+    text-align: center;
+    color: goldenrod;
+    letter-spacing: 2px;
+    text-shadow: 1px 3px black;
+}
+.whatwedocontent{
+    width: 250px; height: 250px;text-align: center;
+    background-color: #1b1e21;border-radius: 100%;
+    padding: 40px;
+    font-size: 20px;
+    color: #9acfea;
+}
+
+#wtwedodiv:hover{
+    transform: rotateY(90deg);
+
+}
+#wtwedodiv{
+    transition: transform 4s;
+}
+#closingline{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: dodgerblue dotted underline;
+    font-family: cursive;
+    text-shadow: 3px 2px black;
+    color: #985f0d;
+}
+#styleid:hover #stylehover{
+    display: block;
+}
+
+#stylehover{
+display: none;
+}
+
+#peepheels,#tstrapheels,#chunkyheels{
+    display: none;
+}
+#peephover:hover #peepheels{
+    display: block;
+}
+#chunkyhover:hover div #chunkyheels{
+    display: block;
+}

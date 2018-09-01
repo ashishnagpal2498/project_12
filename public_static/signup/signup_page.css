@@ -1,0 +1,20 @@
+#securequesoptions{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    color: black;
+    background-color: gainsboro;
+}
+#optionlist{
+    list-style-type: none;
+    font-size: 20px;
+
+}
+#optionlist li{
+    float: left;
+}
+#optionlist li:hover{
+    opacity: 0.7;
+}

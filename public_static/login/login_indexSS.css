@@ -1,0 +1,11 @@
+#otherlogin{
+    border-bottom: gainsboro 1px solid;
+    text-blink: 1px black solid;
+}
+#centerdiv{
+    background-color: rgb(85,92,90);
+    color: white;
+    border: whitesmoke solid 3px;
+    box-shadow: 5px 3px #dee2e624;
+    margin: 40px; padding: 30px 20px;
+}
